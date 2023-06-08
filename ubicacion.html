@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="ubicación.css" />
+        <title>LGO</title>
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <div class="menu-logo">
+                    <img
+                        id="logo"
+                        src="https://www.insart.com/wp-content/uploads/LGO.png"
+                        alt=""
+                    />
+                </div>
+                <div class="menu-pages">
+                    <li><a href="./pagina.html">Inicio</a></li>
+                    <li><a href="./listado.html">Listado</a></li>
+                    <li><a href="./ubicacion.html">Ubicación</a></li>
+                    <li>
+                        <a href="./miPerfil.html">Mi perfil</a>
+                        <ul>
+                            <li><a href="./cuenta.html">Cuenta</a></li>
+                            <li>
+                                <a href="./configuracion.html">Configuración</a>
+                            </li>
+                            <li>
+                                <a href="./cerrarSesion.html">Cerrar sesión</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Buscador"
+                                />
+                            </div>
+                            <button type="submit" class="btn btn-default">
+                                Buscar
+                            </button>
+                        </form>
+                    </li>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Ubica aquí la empresa de tu interés.</h1>
+            <div class="mapa" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                <script>
+                    (function () {
+                        var setting = {
+                            height: 500,
+                            width: 1000,
+                            zoom: 17,
+                            queryString: "Bogotá, Carrera 7, Bogotá, Colombia",
+                            place_id: "ChIJJZ0TyZiZP44R5tdu_gMMvnE",
+                            satellite: false,
+                            centerCoord: [
+                                39.391906704307345, -3.643865777343742,
+                            ],
+                            cid: "0x71be0c03fe6ed7e6",
+                            lang: "es",
+                            cityUrl: "/spain/consuegra-37463",
+                            cityAnchorText:
+                                "Mapa de Consuegra, Castilla La Mancha, España",
+                            id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                            embed_id: "937955",
+                        };
+                        var d = document;
+                        var s = d.createElement("script");
+                        s.src =
+                            "https://1map.com/js/script-for-user.js?embed_id=937955";
+                        s.async = true;
+                        s.onload = function (e) {
+                            window.OneMap.initMap(setting);
+                        };
+                        var to = d.getElementsByTagName("script")[0];
+                        to.parentNode.insertBefore(s, to);
+                    })();
+                </script>
+                <a href="https://1map.com/es/map-embed">1 Map</a>
+            </div>
+        </main>
+    </body>
+</html>
